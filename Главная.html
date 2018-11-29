@@ -11,155 +11,178 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="header_row">
-          <div class="logo_block">
-            <div class="logo"><a class="logo_link" href="#"><img src="img/logo_specovka.svg"/></a></div>
-            <div class="site_desc">Спецодежда | Обувь рабочая | Средства индивидуальной защиты</div>
-          </div>
-          <div class="header_contacts">
-            <div class="h_contacts_col_1">
-              <ul class="loc-mail">
-                <li class="location">г. Минск, ул. Илимская, д.58, Склад 112</li>
-                <li><a class="mail" href="mailto:info@specovka.by">info@specovka.by</a></li>
-              </ul>
+    <div class="mm_menu">
+      <div class="mm_logo"><a class="mm_logolink" href="#"><img src="img/logo_specovka.svg"/></a></div>
+      <div class="mm_nav">
+        <ul class="nav">
+          <li class="active"><a href="Главная.html">Главная</a></li>
+          <li><a href="Каталог.html">Каталог</a></li>
+          <li><a href="Компания.html">Компания</a></li>
+          <li><a href="Акции.html">Акции</a></li>
+          <li><a href="Информация.html">Информация</a></li>
+          <li><a href="Контакты.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="mm_search_form_block">
+        <form class="search_form">
+          <input class="form-control" placeholder="Поиск"/>
+          <button class="search_form_btn" type="submit"></button>
+        </form>
+      </div><a class="mm_download_price" href="#"><span>Скачать прайс-лист</span></a>
+    </div>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <div class="header_row">
+            <div class="logo_block">
+              <div class="logo"><a class="logo_link" href="#"><img src="img/logo_specovka.svg"/></a></div>
+              <div class="site_desc">Спецодежда | Обувь рабочая | Средства индивидуальной защиты</div>
             </div>
-            <div class="h_contacts_col_2">
-              <div class="time_work">
-                <div class="d-flex"><span class="days">Пн - Чт:</span><span class="time">08:30 - 17:00</span></div>
-                <div class="d-flex"><span class="days">Пт:</span><span class="time">08:30 - 16:00</span></div>
+            <div class="header_contacts">
+              <div class="h_contacts_col_1">
+                <ul class="loc-mail">
+                  <li class="location">г. Минск, ул. Илимская, д.58, Склад 112</li>
+                  <li><a class="mail" href="mailto:info@specovka.by">info@specovka.by</a></li>
+                </ul>
+              </div>
+              <div class="h_contacts_col_2">
+                <div class="time_work">
+                  <div class="d-flex"><span class="days">Пн - Чт:</span><span class="time">08:30 - 17:00</span></div>
+                  <div class="d-flex"><span class="days">Пт:</span><span class="time">08:30 - 16:00</span></div>
+                </div>
+              </div>
+              <div class="h_contacts_col_3">
+                <ul class="phones">
+                  <li class="m_tel"><a class="tel dropdown_toggle" href="tel:+375 (17) 297-43-33" id="phones_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">+375 (17) 297-43-33</a>
+                    <div class="dropdown-menu" aria-labelledby="phones_dropdown">
+                      <ul class="m_phones">
+                        <li><a class="velcom" href="tel:+375 (44) 724-29-59">+375 (44) 724-29-59</a></li>
+                        <li><a class="mts" href="tel:+375 (29) 566-24-36">+375 (29) 566-24-36</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a class="tel" href="tel:+375 (17) 297-43-33">+375 (17) 297-43-33</a></li>
+                  <li><a class="velcom" href="tel:+375 (44) 724-29-59">+375 (44) 724-29-59</a></li>
+                  <li><a class="mts" href="tel:+375 (29) 566-24-36">+375 (29) 566-24-36</a></li>
+                  <li class="m_tel">
+                    <button class="btn_default" data-toggle="modal" data-target="#">Заказать звонок</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="h_contacts_col_4">
+                <button class="btn_default" data-toggle="modal" data-target="#">Заказать звонок</button>
+              </div>
+              <div class="h_contacts_col_5"><a class="m_cart" href="#"><span class="icon"><span class="count">20</span></span></a></div>
+              <div class="h_contacts_col_6">
+                <div class="mm_btn">
+                  <div class="hamburger"><span></span><span></span><span></span></div>
+                </div>
               </div>
             </div>
-            <div class="h_contacts_col_3">
-              <ul class="phones">
-                <li class="m_tel"><a class="tel dropdown_toggle" href="tel:+375 (17) 297-43-33" id="phones_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">+375 (17) 297-43-33</a>
-                  <div class="dropdown-menu" aria-labelledby="phones_dropdown">
-                    <ul class="m_phones">
-                      <li><a class="velcom" href="tel:+375 (44) 724-29-59">+375 (44) 724-29-59</a></li>
-                      <li><a class="mts" href="tel:+375 (29) 566-24-36">+375 (29) 566-24-36</a></li>
+          </div>
+        </div>
+      </header>
+      <nav class="main_nav">
+        <div class="container">
+          <div class="nav_flex position-relative">
+            <div class="d-flex">
+              <ul class="catalog_nav">
+                <li><a class="catalog_link" href="#"><span>Каталог</span></a>
+                  <div class="catalog_menu_dropdown">
+                    <ul class="row">
+                      <li class="col-12 col-sm-6 col-md-6 col-xl-3"><a href="#">Спецодежда</a>
+                        <ul class="sub_menu">
+                          <li><a href="#">Летняя спецодежда</a></li>
+                          <li><a href="#">Летняя спецодежда</a></li>
+                          <li><a href="#">Летняя спецодежда</a></li>
+                          <li><a href="#">Летняя спецодежда</a></li>
+                          <li><a href="#">Летняя спецодежда</a></li>
+                          <li><a href="#">Летняя спецодежда</a></li>
+                          <li><a href="#">Летняя спецодежда</a></li>
+                        </ul>
+                      </li>
+                      <li class="col-12 col-sm-6 col-md-6 col-xl-3"><a href="#">Спецодежда</a>
+                        <ul class="sub_menu">
+                          <li><a href="#">Летняя спецодежда</a></li>
+                          <li><a href="#">Летняя спецодежда</a></li>
+                          <li><a href="#">Летняя спецодежда</a></li>
+                          <li><a href="#">Летняя спецодежда</a></li>
+                          <li><a href="#">Летняя спецодежда</a></li>
+                          <li><a href="#">Летняя спецодежда</a></li>
+                          <li><a href="#">Летняя спецодежда</a></li>
+                        </ul>
+                      </li>
+                      <li class="col-12 col-sm-6 col-md-6 col-xl-3"><a href="#">Спецодежда</a>
+                        <ul class="sub_menu">
+                          <li><a href="#">Летняя спецодежда</a></li>
+                          <li><a href="#">Летняя спецодежда</a></li>
+                          <li><a href="#">Летняя спецодежда</a></li>
+                          <li><a href="#">Летняя спецодежда</a></li>
+                          <li><a href="#">Летняя спецодежда</a></li>
+                          <li><a href="#">Летняя спецодежда</a></li>
+                          <li><a href="#">Летняя спецодежда</a></li>
+                        </ul>
+                      </li>
+                      <li class="col-12 col-sm-6 col-md-6 col-xl-3"><a href="#">Спецодежда</a>
+                        <ul class="sub_menu">
+                          <li><a href="#">Летняя спецодежда</a></li>
+                          <li><a href="#">Летняя спецодежда</a></li>
+                          <li><a href="#">Летняя спецодежда</a></li>
+                          <li><a href="#">Летняя спецодежда</a></li>
+                          <li><a href="#">Летняя спецодежда</a></li>
+                          <li><a href="#">Летняя спецодежда</a></li>
+                          <li><a href="#">Летняя спецодежда</a></li>
+                        </ul>
+                      </li>
                     </ul>
                   </div>
                 </li>
-                <li><a class="tel" href="tel:+375 (17) 297-43-33">+375 (17) 297-43-33</a></li>
-                <li><a class="velcom" href="tel:+375 (44) 724-29-59">+375 (44) 724-29-59</a></li>
-                <li><a class="mts" href="tel:+375 (29) 566-24-36">+375 (29) 566-24-36</a></li>
-                <li class="m_tel">
-                  <button class="btn_default" data-toggle="modal" data-target="#">Заказать звонок</button>
+              </ul>
+              <ul class="nav">
+                <li class="has_submenu"><a href="Компания.html">Компания<i class="arrow"></i></a>
+                  <ul class="sub_menu">
+                    <li><a href="#">Нанесение логотипа</a></li>
+                    <li class="active"><a href="#">Новости</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Вопрос-ответ</a></li>
+                  </ul>
                 </li>
+                <li><a href="Акции.html">Акции</a></li>
+                <li class="has_submenu"><a href="Информация.html">Информация<i class="arrow"></i></a>
+                  <ul class="sub_menu">
+                    <li><a href="#">Нанесение логотипа</a></li>
+                    <li class="active"><a href="#">Новости</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Вопрос-ответ</a></li>
+                  </ul>
+                </li>
+                <li><a href="Контакты.html">Контакты</a></li>
               </ul>
             </div>
-            <div class="h_contacts_col_4">
-              <button class="btn_default" data-toggle="modal" data-target="#">Заказать звонок</button>
-            </div>
-            <div class="h_contacts_col_5"><a class="m_cart" href="#"><span class="icon"><span class="count">20</span></span></a></div>
-            <div class="h_contacts_col_6">
-              <div class="mm_btn">
-                <div class="hamburger"><span></span><span></span><span></span></div>
-              </div>
+            <div class="main_nav_btns">
+              <ul class="main_nav_btns_list">
+                <li><a class="download_price" href="#"><span>Скачать прайс-лист</span></a></li>
+                <li>
+                  <button class="search_btn" id="search_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                  <div class="dropdown-menu search_dropdown" aria-labelledby="search_dropdown">
+                    <div class="container p-0">
+                      <form class="search_form">
+                        <input class="form-control" placeholder="Поиск по сайту"/>
+                        <button class="search_form_btn" type="submit"></button>
+                      </form>
+                    </div>
+                  </div>
+                </li>
+                <li><a class="cart_decktop" href="#">
+                    <div class="c_text">Корзина:  <span>240 BYN</span></div></a></li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
-    </header>
-    <nav class="main_nav">
-      <div class="container position-relative">
-        <div class="nav_flex">
-          <div class="d-flex">
-            <ul class="catalog_nav">
-              <li><a class="catalog_link" href="#"><span>Каталог</span></a>
-                <div class="catalog_menu_dropdown">
-                  <ul class="row">
-                    <li class="col-12 col-sm-6 col-md-6 col-xl-3"><a href="#">Спецодежда</a>
-                      <ul class="sub_menu">
-                        <li><a href="#">Летняя спецодежда</a></li>
-                        <li><a href="#">Летняя спецодежда</a></li>
-                        <li><a href="#">Летняя спецодежда</a></li>
-                        <li><a href="#">Летняя спецодежда</a></li>
-                        <li><a href="#">Летняя спецодежда</a></li>
-                        <li><a href="#">Летняя спецодежда</a></li>
-                        <li><a href="#">Летняя спецодежда</a></li>
-                      </ul>
-                    </li>
-                    <li class="col-12 col-sm-6 col-md-6 col-xl-3"><a href="#">Спецодежда</a>
-                      <ul class="sub_menu">
-                        <li><a href="#">Летняя спецодежда</a></li>
-                        <li><a href="#">Летняя спецодежда</a></li>
-                        <li><a href="#">Летняя спецодежда</a></li>
-                        <li><a href="#">Летняя спецодежда</a></li>
-                        <li><a href="#">Летняя спецодежда</a></li>
-                        <li><a href="#">Летняя спецодежда</a></li>
-                        <li><a href="#">Летняя спецодежда</a></li>
-                      </ul>
-                    </li>
-                    <li class="col-12 col-sm-6 col-md-6 col-xl-3"><a href="#">Спецодежда</a>
-                      <ul class="sub_menu">
-                        <li><a href="#">Летняя спецодежда</a></li>
-                        <li><a href="#">Летняя спецодежда</a></li>
-                        <li><a href="#">Летняя спецодежда</a></li>
-                        <li><a href="#">Летняя спецодежда</a></li>
-                        <li><a href="#">Летняя спецодежда</a></li>
-                        <li><a href="#">Летняя спецодежда</a></li>
-                        <li><a href="#">Летняя спецодежда</a></li>
-                      </ul>
-                    </li>
-                    <li class="col-12 col-sm-6 col-md-6 col-xl-3"><a href="#">Спецодежда</a>
-                      <ul class="sub_menu">
-                        <li><a href="#">Летняя спецодежда</a></li>
-                        <li><a href="#">Летняя спецодежда</a></li>
-                        <li><a href="#">Летняя спецодежда</a></li>
-                        <li><a href="#">Летняя спецодежда</a></li>
-                        <li><a href="#">Летняя спецодежда</a></li>
-                        <li><a href="#">Летняя спецодежда</a></li>
-                        <li><a href="#">Летняя спецодежда</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-            <ul class="nav">
-              <li class="has_submenu"><a href="Компания.html">Компания<i class="arrow"></i></a>
-                <ul class="sub_menu">
-                  <li><a href="#">Нанесение логотипа</a></li>
-                  <li class="active"><a href="#">Новости</a></li>
-                  <li><a href="#">Статьи</a></li>
-                  <li><a href="#">Вопрос-ответ</a></li>
-                </ul>
-              </li>
-              <li><a href="Акции.html">Акции</a></li>
-              <li class="has_submenu"><a href="Информация.html">Информация<i class="arrow"></i></a>
-                <ul class="sub_menu">
-                  <li><a href="#">Нанесение логотипа</a></li>
-                  <li class="active"><a href="#">Новости</a></li>
-                  <li><a href="#">Статьи</a></li>
-                  <li><a href="#">Вопрос-ответ</a></li>
-                </ul>
-              </li>
-              <li><a href="Контакты.html">Контакты</a></li>
-            </ul>
-          </div>
-          <div class="main_nav_btns">
-            <ul class="main_nav_btns_list">
-              <li><a class="download_price" href="#"><span>Скачать прайс-лист</span></a></li>
-              <li>
-                <button class="search_btn" id="search_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                <div class="dropdown-menu search_dropdown" aria-labelledby="search_dropdown">
-                  <form class="search_form">
-                    <input class="form-control" placeholder="Поиск по сайту"/>
-                    <button class="search_form_btn" type="submit"></button>
-                  </form>
-                </div>
-              </li>
-              <li><a class="cart_decktop" href="#">
-                  <div class="c_text">Корзина:  <span>240 BYN</span></div></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!--include inc/index/content.pug-->
-    <!--include inc/footer.pug-->
+      </nav>
+      <!--include inc/index/content.pug-->
+      <!--include inc/footer.pug-->
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>

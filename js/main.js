@@ -1,7 +1,19 @@
 $(document).ready(function(){
 
 
+    $('.mm_btn').click(function () {
+        $('.mm_menu').toggleClass('open');
+        $('html').toggleClass('page-noscroll');
 
+        return false;
+    });
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest(".mm_menu.open").length) {
+            $(".mm_menu.open").removeClass('open');
+            $("html").removeClass('page-noscroll');
+        }
+        e.stopPropagation();
+    });
 
 
 
