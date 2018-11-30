@@ -722,9 +722,15 @@ img, video{
   font: 18px @Ubuntu-bold;
   background: @bg_default;
   border:0;
-  padding: 19px 30px;
+  padding: 19px 10px;
+  width: 100%;
+  max-width: 240px;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
+  @media (max-width:991px){
+    font: 16px @Ubuntu-bold;
+  }
 }
 
 header{
@@ -920,6 +926,7 @@ nav.main_nav{
       left: 0;
       top: 100%;
       min-width: 190px;
+      z-index: 99;
       .box-shadow(0 4px 16px rgba(49, 78, 125, 0.25));
 
 
@@ -1028,6 +1035,7 @@ nav.main_nav{
         padding: 32px 35px;
         top: 100%;
         background: #FFFFFF;
+        z-index: 99;
         .box-shadow(0px 4px 16px rgba(49, 78, 125, 0.25));
         @media (max-width:1200px){
           padding-top: 0;
@@ -1129,13 +1137,14 @@ nav.main_nav{
     }
 
     .search_dropdown{
-      background: #FFFFFF;
+      background: none;
       padding: 0;
       margin: 0;
       border:0;
       .border-radius(0);
       right: 0;
       width: 100%;
+      z-index: 98;
       .transform(translate3d(0, 60px, 0px)) !important;
 
       .search_form{
@@ -1359,6 +1368,9 @@ nav.main_nav{
 .wrapper{
     .transition(.5s linear);
   .transform(translateX(0));
+  @media (max-width:660px){
+    padding-top: 60px;
+  }
 }
 
 .page-noscroll{
@@ -1396,4 +1408,248 @@ nav.main_nav{
     }
   }
 
+}
+
+
+
+.bg_grey{
+  background: #F5F8F9;
+}
+
+.section_main_slider{
+  padding-top: 30px;
+  @media (max-width:1200px){
+    padding-top: 15px;
+  }
+  @media (max-width:991px){
+    padding-top: 10px;
+  }
+
+  > .container{
+    @media (max-width:575px){
+      padding: 0;
+    }
+  }
+}
+.main_slider{
+  .slider_item{
+    height: 515px;
+    background-size: cover;
+    background-position: center;
+    @media (max-width:991px){
+      height: 350px;
+    }
+    @media (max-width:575px){
+      height: 320px; background-position: 70% 100%;
+
+    }
+
+    .d-flex{
+      height: 100%;
+      .ai-center();
+    }
+
+    .slder_caption{
+      width: 100%;
+     padding: 0 123px 30px;
+      margin: auto;
+      @media (max-width:991px){
+        padding: 0 90px 30px;
+      }
+      @media (max-width:575px){
+        padding: 0 10px 30px;
+      }
+      .title_h1{
+        color: #3D5D8F;
+        font: 36px/56px @Ubuntu-bold;
+        text-transform: uppercase;
+        max-width: 680px;
+        margin-bottom: 35px;
+        @media (max-width:991px){
+          font: 24px/36px @Ubuntu-bold;max-width: 500px;margin-bottom: 20px;
+        }
+        @media (max-width:575px){
+          font: 18px/28px @Ubuntu-bold;
+          max-width: 60%;margin-bottom: 25px;
+        }
+      }
+      .btn_default{
+        display: inline-block;
+        color: #fff;
+        font: 18px @Ubuntu-bold;
+        background: @bg_default;
+        text-align: center;
+        width: 100%;
+        max-width: 240px;
+        padding-left: 10px;
+        padding-right: 10px;
+        @media (max-width:991px){
+          max-width: 220px;
+        }
+
+        &:hover, &:focus{
+            text-decoration: none;
+          color: #fff;
+        }
+      }
+    }
+
+  }
+
+
+
+  .slick-dots{
+    width: 100%;
+    padding-left: 123px;
+   left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 60px;
+    .flex();
+    .j-start();
+    @media (max-width:991px){
+      padding-left: 90px; bottom: 35px;
+    }
+    @media (max-width:575px){
+      padding-left: 10px;bottom: 40px;
+    }
+      li{
+        width: 12px;
+        height: 12px;
+        .border-radius(50%);
+        @media (max-width:991px){
+          width: 10px;
+          height: 10px;
+          margin: 0 5px;
+        }
+        &.slick-active{
+          button{
+            &:before{
+              background: @bg_default;
+            }
+          }
+        }
+        button{
+          width: 12px;
+          height: 12px;
+          .border-radius(50%);
+          @media (max-width:991px){
+            width: 10px;
+            height: 10px;
+          }
+          &:before{
+            .b_a();
+            width: 12px;
+            height: 12px;
+            .border-radius(50%);
+            background: #fff;
+            opacity: 1;
+            @media (max-width:991px){
+              width: 10px;
+              height: 10px;
+            }
+          }
+        }
+      }
+  }
+
+  .slick-arrow{
+    width: 60px;
+    height: 60px;
+    background: @bg_default;
+    z-index: 9;
+    opacity: 1;
+    @media (max-width:991px){
+      width: 50px;
+      height: 50px;
+    }
+    @media (max-width:575px){
+      display: none !important;
+    }
+    &:before{
+        .b_a();
+      .m_a();
+      width: 12px;
+      height: 18px;
+      opacity: 1;
+    }
+  }
+
+
+  .slick-next{
+    right: -30px;
+    &:before{
+      background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxMiAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEgMUMxLjggMS43MTExMSA3LjMzMzMzIDYuNjI5NjMgMTAgOUwxIDE3IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+Cg==');
+    }
+    @media (max-width:1480px){
+      right: 0;
+    }
+  }
+
+  .slick-prev{
+    left: -30px;
+    &:before{
+      background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxMiAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTExIDFDMTAuMiAxLjcxMTExIDQuNjY2NjcgNi42Mjk2MyAyIDlMMTEgMTciIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIvPgo8L3N2Zz4K');
+    }
+
+    @media (max-width:1480px){
+      left: 0;
+    }
+  }
+
+}
+
+.section_preimuschestva{
+  padding: 50px 0;
+  @media (max-width:1200px){
+    padding:25px 0 5px;
+  }
+  @media (max-width:575px){
+    padding:25px 0 10px;
+  }
+}
+
+.pr_item{
+  .flex();
+  .ai-center();
+  @media (max-width:1200px){
+    margin-bottom: 30px;
+  }
+  @media (max-width:575px){
+    margin-bottom: 20px;
+  }
+  .img{
+    min-width: 75px;
+    text-align: left;
+    img{
+      @media (max-width:767px){
+        max-height: 40px;
+      }
+    }
+  }
+  .text{
+    color:#3D5D8F;
+    font: 18px/24px @Ubuntu-bold;
+    padding-right: 40px;
+    @media (max-width:1400px){
+      padding-right: 0;
+    }
+    @media (max-width:991px){
+      font: 16px/24px @Ubuntu-bold;
+    }
+  }
+}
+
+
+
+
+.category_list{
+  .cat_item{
+    .flex();
+    padding: 10px;
+    background: #FFFFFF;
+    border: 1px solid #E3E7E9;
+    min-height: 260px;
+    margin-bottom: 30px;
+  }
 }
