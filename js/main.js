@@ -246,6 +246,26 @@ $(document).ready(function(){
     }
 
 
+    $('.sidebar_menu .arrow').on('click', function(){
+        var sub_menu=$(this).next();
+        if($(sub_menu).is(':visible')){
+            $(this).parent().removeClass('open');
+            $(sub_menu).slideUp();
+        }else{
+            $(this).parent().addClass('open');
+            $(sub_menu).slideDown();
+        }
+    });
+
+
+    $('.cat_item').each(function(){
+        var showBtn=$(this).find('.show_submenu');
+        var cat_submenu=$(this).find('.cat_submenu');
+        $(showBtn).on('click', function(){
+            $(cat_submenu).toggleClass('show');
+        });
+    });
+
 
 
     /*
