@@ -106,6 +106,147 @@ $(document).ready(function(){
 
 
 
+    if($('.product_bigimg_slider .slider_item').length >1){
+        $('.product_bigimg_slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            //fade: true,
+            asNavFor: '.product_slider_nav',
+            responsive: [
+
+                {
+                    breakpoint: 660,
+                    settings: {
+                        dots: true,
+                    }
+                }
+            ]
+        });
+    }
+
+
+    $('.product_slider_nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.product_bigimg_slider',
+        dots: false,
+        arrows: true,
+        focusOnSelect: true,
+        infinite:false,
+        responsive: [
+
+            {
+                breakpoint: 1200,
+                settings: {
+                    vertical:true,
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow:4,
+                    vertical:true,
+                }
+            },
+            {
+                breakpoint: 660,
+                settings: {
+                    vertical:true,
+                    slidesToShow: 3,
+                }
+            }
+        ]
+    });
+
+
+
+
+    $('#show_more').on('click', function(){
+        if($('#more').is(':visible')){
+            $('#more').slideUp();
+            $(this).removeClass('act').text('Развернуть');
+        }else{
+            $('#more').slideDown();
+            $(this).addClass('act').text('Свернуть');
+        }
+    });
+
+
+
+
+
+    if($('.related_products_slider > div').length > 4){
+        $('.related_products_slider').slick({
+            autoplay: false,
+            dots: true,
+            arrows: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 575,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    }else if($(window).innerWidth() < 575 && $('.related_products_slider > div').length > 1){
+        $('.related_products_slider > div').slick({
+            autoplay: false,
+            dots: true,
+            arrows: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+    }else if($(window).innerWidth() < 767 && $('.related_products_slider > div').length > 2){
+        $('.related_products_slider').slick({
+            autoplay: false,
+            dots: true,
+            arrows: true,
+            slidesToShow: 2,
+            slidesToScroll: 1
+        });
+    }else if($(window).innerWidth() < 991 && $('.related_products_slider > div').length > 3){
+        $('.related_products_slider').slick({
+            autoplay: false,
+            dots: true,
+            arrows: true,
+            slidesToShow: 3,
+            slidesToScroll: 1
+        });
+    }
+
+
+
+    if($(window).innerWidth() < 575){
+        $('.specifications > h2').on('click', function () {
+                if($('.char_block').is(':visible')){
+                    $('.char_block').slideUp();
+                    $(this).addClass('closed');
+                }else{
+                    $('.char_block').slideDown();
+                    $(this).removeClass('closed');
+                }
+        });
+    }
+
+
+
 
     /*
 
