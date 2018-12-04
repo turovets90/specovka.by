@@ -285,6 +285,22 @@ $(document).ready(function(){
 
 
 
+    $('.cart_modal_body_item').each(function(){
+        var cart_modal_body_item=$(this);
+        var c_size=$(this).find('.c_size');
+        var mm_hide=$(this).find('.mm_hide');
+        $(c_size).on('click', function () {
+            if($(mm_hide).is(':visible')){
+                $(cart_modal_body_item).removeClass('open');
+                $(mm_hide).slideUp();
+            }else{
+                $(cart_modal_body_item).addClass('open');
+                $(mm_hide).slideDown();
+            }
+        });
+
+    });
+
 
 
 });

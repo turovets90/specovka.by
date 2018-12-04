@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Оформление заказа</title>
+    <title>Модальные окна</title>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -184,95 +184,12 @@
         <div class="container">
           <ul class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Главная</a></li>
-            <li class="breadcrumb-item"><a href="#">Корзина</a></li>
-            <li class="breadcrumb-item"><a href="#">Оформление заказа</a></li>
+            <li class="breadcrumb-item"><a href="#">Модальные окна</a></li>
           </ul>
           <div class="content">
-            <h1>Оформление заказа</h1>
-            <div class="checkout_container">
-              <div class="row">
-                <div class="col-12 col-sm-12 col-md-7 col-xl-8 left_content">
-                  <div class="checkout_form_container">
-                    <form class="checkout_form">
-                      <div class="row">
-                        <div class="col-12 col-sm-12 col-md-12 col-xl-6 field">
-                          <label>Имя <i class="necessarily">*</i></label>
-                          <input class="form-control" type="text" placeholder="Ваше имя"/>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-xl-6 field">
-                          <label>Телефон <i class="necessarily">*</i></label>
-                          <input class="form-control" type="text" placeholder="Ваш телефон"/>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-xl-6 field">
-                          <label>Email <i class="necessarily">*</i></label>
-                          <input class="form-control" type="text" placeholder="Ваше email"/>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-xl-6 field">
-                          <label>Название организации</label>
-                          <input class="form-control" type="text" placeholder="Название вашей организации"/>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-xl-6 field">
-                          <label>УНП <i class="necessarily">*</i></label>
-                          <input class="form-control" type="text" placeholder="Ваше УНП"/>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-xl-6 field">
-                          <label>Расчетный счет</label>
-                          <input class="form-control" type="text" placeholder="Ваш расчетный счет"/>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-xl-6 field">
-                          <label>Банк</label>
-                          <input class="form-control" type="text" placeholder="Название банка"/>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-xl-6 field">
-                          <label>БИК</label>
-                          <input class="form-control" type="text" placeholder="БИК банка"/>
-                        </div>
-                        <div class="col-12 field delivery">
-                          <label>Доставка <i class="necessarily">*</i></label>
-                          <div class="row">
-                            <div class="col-12 co-sm-12 col-md-12 col-xl-6"><span class="radio">
-                                <input type="radio" name="delivery" id="delivery-1"/>
-                                <label for="delivery-1">Самовывоз<span>Самовывоз по адрессу:  220047, Республика Беларусь,<br> г. Минск, ул. Илимская, 58, склад 12</span></label></span></div>
-                            <div class="col-12 co-sm-12 col-md-12 col-xl-6"><span class="radio">
-                                <input type="radio" name="delivery" id="delivery-2" checked="checked"/>
-                                <label for="delivery-2">Доставка по РБ<span>Стоимость доставки рассчитывается отдельно и будет сообщена Вам менеджером после оформления заказа.</span></label></span></div>
-                          </div>
-                        </div>
-                        <div class="col-12 field">
-                          <label>Адрес доставки</label>
-                          <input class="form-control" type="text" placeholder="Ваш адрес"/>
-                        </div>
-                        <div class="col-12 field">
-                          <label>Комментарий к заказу</label>
-                          <textarea class="form-control" placeholder="Ваш комментарий (например: “Необходимо нанесение логотипа”)"></textarea>
-                        </div>
-                        <div class="col-12 field">
-                          <div class="row">
-                            <div class="col-12 col-sm-12 col-md-6 mb-3 mb-md-0"><i class="necessarily">*</i> - поля обязательные для заполнения</div>
-                            <div class="col-12 col-sm-12 col-md-6 text-md-right">
-                              <button class="btn_default" type="submit">Оформить заказ</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-5 col-xl-4 right_content">
-                  <div class="your_order_container">
-                    <div class="your_order_header">
-                      <div class="y_title">Ваш заказ</div><a class="y_link" href="#">Изменить</a>
-                    </div>
-                    <div class="your_order_body">
-                      <div class="d-flex"><span class="bold">Товаров на сумму:</span><span>10.50 BYN</span></div>
-                      <div class="d-flex"><span class="bold">В том числе НДС:</span><span>20.25 BYN</span></div>
-                      <div class="d-flex last"><span class="bold">Итого с НДС:</span><span>30.75 BYN</span></div>
-                      <button class="btn_default">Оформить заказ</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <h1>Модальные окна</h1>
+            <button data-target="#cart_modal" data-toggle="modal">Добавить в корзину</button>
+            <button data-target="#order_call" data-toggle="modal">Заказать звонок</button>
           </div>
         </div>
       </section>
@@ -349,5 +266,206 @@
     <script src="js/slick.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/main.js"></script>
+    <div class="modal fade" id="order_call" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button class="close" data-dismiss="modal" aria-label="Close"></button>
+            <p class="title h2">Обратный звонок</p>
+            <form class="modal_form">
+              <div class="row">
+                <div class="col-12 field">
+                  <label>Имя</label>
+                  <input class="form-control" type="text" placeholder="Ваше имя"/>
+                </div>
+                <div class="col-12 field">
+                  <label>Email</label>
+                  <input class="form-control" type="text" placeholder="Контактный email"/>
+                </div>
+                <div class="col-12 field">
+                  <label>Телефон <i class="necessarily">*</i></label>
+                  <input class="form-control" type="text" placeholder="Номер телефона"/>
+                </div>
+                <div class="col-12 field">
+                  <label>Сообщение</label>
+                  <textarea class="form-control" placeholder="Ваше сообщение"></textarea>
+                </div>
+                <div class="col-12 btn_block">
+                  <button class="btn_default" type="submit">Отправить</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="cart_modal" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button class="close" data-dismiss="modal" aria-label="Close"></button>
+            <p class="title h2">Выбор размера</p>
+            <div class="mb_title">ФУТБОЛКИ</div>
+            <div class="mb_subtitle">Товар продается только упаковкой по 10 штук.</div>
+            <div class="warning">Количество товара добавляемого в корзину должно быть кратно количеству товара в упаковке!<span class="w_close"></span></div>
+            <form class="cart_modal_form">
+              <div class="cart_modal_table">
+                <div class="cart_modal_header">
+                  <div class="c_size">Размер</div>
+                  <div class="c_growth">Рост</div>
+                  <div class="c_amount">Количество</div>
+                  <div class="price">Цена без НДС</div>
+                </div>
+                <div class="cart_modal_body">
+                  <div class="cart_modal_body_item">
+                    <div class="c_size"><span class="d_hide">Размер:</span><span>40-42</span></div>
+                    <div class="mm_hide">
+                      <div class="d-flex align-items-center">
+                        <div class="c_growth"><span class="d_hide">Рост:</span><span>170-172</span></div>
+                        <div class="c_amount">
+                          <div class="amount"><span class="down"></span>
+                            <input type="text" value="1"/><span class="up"></span>
+                          </div>
+                        </div>
+                        <div class="price"><span class="d_hide">Цена без НДС:</span><span class="bold">40 BYN</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart_modal_body_item">
+                    <div class="c_size"><span class="d_hide">Размер:</span><span>40-42</span></div>
+                    <div class="mm_hide">
+                      <div class="d-flex align-items-center">
+                        <div class="c_growth"><span class="d_hide">Рост:</span><span>170-172</span></div>
+                        <div class="c_amount">
+                          <div class="amount"><span class="down"></span>
+                            <input type="text" value="1"/><span class="up"></span>
+                          </div>
+                        </div>
+                        <div class="price"><span class="d_hide">Цена без НДС:</span><span class="bold">40 BYN</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart_modal_body_item">
+                    <div class="c_size"><span class="d_hide">Размер:</span><span>40-42</span></div>
+                    <div class="mm_hide">
+                      <div class="d-flex align-items-center">
+                        <div class="c_growth"><span class="d_hide">Рост:</span><span>170-172</span></div>
+                        <div class="c_amount">
+                          <div class="amount"><span class="down"></span>
+                            <input type="text" value="1"/><span class="up"></span>
+                          </div>
+                        </div>
+                        <div class="price"><span class="d_hide">Цена без НДС:</span><span class="bold">40 BYN</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart_modal_body_item">
+                    <div class="c_size"><span class="d_hide">Размер:</span><span>40-42</span></div>
+                    <div class="mm_hide">
+                      <div class="d-flex align-items-center">
+                        <div class="c_growth"><span class="d_hide">Рост:</span><span>170-172</span></div>
+                        <div class="c_amount">
+                          <div class="amount"><span class="down"></span>
+                            <input type="text" value="1"/><span class="up"></span>
+                          </div>
+                        </div>
+                        <div class="price"><span class="d_hide">Цена без НДС:</span><span class="bold">40 BYN</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart_modal_body_item">
+                    <div class="c_size"><span class="d_hide">Размер:</span><span>40-42</span></div>
+                    <div class="mm_hide">
+                      <div class="d-flex align-items-center">
+                        <div class="c_growth"><span class="d_hide">Рост:</span><span>170-172</span></div>
+                        <div class="c_amount">
+                          <div class="amount"><span class="down"></span>
+                            <input type="text" value="1"/><span class="up"></span>
+                          </div>
+                        </div>
+                        <div class="price"><span class="d_hide">Цена без НДС:</span><span class="bold">40 BYN</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart_modal_body_item">
+                    <div class="c_size"><span class="d_hide">Размер:</span><span>40-42</span></div>
+                    <div class="mm_hide">
+                      <div class="d-flex align-items-center">
+                        <div class="c_growth"><span class="d_hide">Рост:</span><span>170-172</span></div>
+                        <div class="c_amount">
+                          <div class="amount"><span class="down"></span>
+                            <input type="text" value="1"/><span class="up"></span>
+                          </div>
+                        </div>
+                        <div class="price"><span class="d_hide">Цена без НДС:</span><span class="bold">40 BYN</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart_modal_body_item">
+                    <div class="c_size"><span class="d_hide">Размер:</span><span>40-42</span></div>
+                    <div class="mm_hide">
+                      <div class="d-flex align-items-center">
+                        <div class="c_growth"><span class="d_hide">Рост:</span><span>170-172</span></div>
+                        <div class="c_amount">
+                          <div class="amount"><span class="down"></span>
+                            <input type="text" value="1"/><span class="up"></span>
+                          </div>
+                        </div>
+                        <div class="price"><span class="d_hide">Цена без НДС:</span><span class="bold">40 BYN</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart_modal_body_item">
+                    <div class="c_size"><span class="d_hide">Размер:</span><span>40-42</span></div>
+                    <div class="mm_hide">
+                      <div class="d-flex align-items-center">
+                        <div class="c_growth"><span class="d_hide">Рост:</span><span>170-172</span></div>
+                        <div class="c_amount">
+                          <div class="amount"><span class="down"></span>
+                            <input type="text" value="1"/><span class="up"></span>
+                          </div>
+                        </div>
+                        <div class="price"><span class="d_hide">Цена без НДС:</span><span class="bold">40 BYN</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart_modal_body_item">
+                    <div class="c_size"><span class="d_hide">Размер:</span><span>40-42</span></div>
+                    <div class="mm_hide">
+                      <div class="d-flex align-items-center">
+                        <div class="c_growth"><span class="d_hide">Рост:</span><span>170-172</span></div>
+                        <div class="c_amount">
+                          <div class="amount"><span class="down"></span>
+                            <input type="text" value="1"/><span class="up"></span>
+                          </div>
+                        </div>
+                        <div class="price"><span class="d_hide">Цена без НДС:</span><span class="bold">40 BYN</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart_modal_body_item">
+                    <div class="c_size"><span class="d_hide">Размер:</span><span>40-42</span></div>
+                    <div class="mm_hide">
+                      <div class="d-flex align-items-center">
+                        <div class="c_growth"><span class="d_hide">Рост:</span><span>170-172</span></div>
+                        <div class="c_amount">
+                          <div class="amount"><span class="down"></span>
+                            <input type="text" value="1"/><span class="up"></span>
+                          </div>
+                        </div>
+                        <div class="price"><span class="d_hide">Цена без НДС:</span><span class="bold">40 BYN</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <button class="btn_default">Добавить в корзину</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
