@@ -303,6 +303,32 @@ $(document).ready(function(){
 
 
 
+    $(window).resize(function(){
+        var header_row = $('.header_row').outerHeight();
+        var header_height = $('header').outerHeight();
+        console.log(header_height);
+        $(window).scroll(function(){
+            if($(window).innerWidth() > 1160){
+                if ($(this).scrollTop() > header_row) {
+                    $('.main_nav_container').addClass('fixed');
+                } else {
+                    $('.main_nav_container').removeClass('fixed');
+                }
+            }else{
+                if ($(this).scrollTop() > header_height) {
+                    $('.main_nav_container').addClass('fixed');
+                } else {
+                    $('.main_nav_container').removeClass('fixed');
+                }
+            }
+
+        });
+
+    });
+    $(window).resize();
+
+
+
 });
 
 

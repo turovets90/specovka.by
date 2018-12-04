@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Корзина</title>
+    <title>Статьи</title>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -186,124 +186,181 @@
         <div class="container">
           <ul class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Главная</a></li>
-            <li class="breadcrumb-item"><a href="#">Корзина</a></li>
+            <li class="breadcrumb-item"><a href="#">Статьи</a></li>
           </ul>
           <div class="content">
-            <h1>Корзина</h1>
-            <div class="cart_container">
-              <form>
-                <div class="cart_table">
-                  <div class="cart_header">
-                    <div class="c_empty"></div>
-                    <div class="c_product_name">Название товара</div>
-                    <div class="c_price">Цена</div>
-                    <div class="c_size">Размер</div>
-                    <div class="c_amount">Кол-во</div>
-                    <div class="c_cost">Стоимость</div>
+            <h1>Статьи</h1>
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-4 col-xl-3">
+                <div class="sidebar">
+                  <ul class="sidebar_menu level1">
+                    <li><a href="#">Категория 1 уровень</a><span class="arrow"></span>
+                      <ul class="level2">
+                        <li><a href="#">Категория 2 уровень</a><span class="arrow"></span>
+                          <ul class="level3">
+                            <li><a href="#">Товар</a></li>
+                            <li><a href="#">Товар</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Категория 2 уровень</a><span class="arrow"></span>
+                          <ul class="level3">
+                            <li><a href="#">Товар</a></li>
+                            <li><a href="#">Товар</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="active"><a href="#">Категория 1 уровень</a><span class="arrow"></span>
+                      <ul class="level2">
+                        <li><a href="#">Категория 2 уровень</a><span class="arrow"></span>
+                          <ul class="level3">
+                            <li class="active"><a href="#">Товар</a></li>
+                            <li><a href="#">Товар</a></li>
+                          </ul>
+                        </li>
+                        <li class="active"><a href="#">Категория 2 уровень</a><span class="arrow"></span>
+                          <ul class="level3">
+                            <li class="active"><a href="#">Товар</a></li>
+                            <li><a href="#">Товар</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Категория 1 уровень</a><span class="arrow"></span>
+                      <ul class="level2">
+                        <li><a href="#">Категория 2 уровень</a><span class="arrow"></span>
+                          <ul class="level3">
+                            <li><a href="#">Товар</a></li>
+                            <li><a href="#">Товар</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Категория 2 уровень</a><span class="arrow"></span>
+                          <ul class="level3">
+                            <li><a href="#">Товар</a></li>
+                            <li><a href="#">Товар</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Категория 1 уровень</a><span class="arrow"></span>
+                      <ul class="level2">
+                        <li><a href="#">Категория 2 уровень</a><span class="arrow"></span>
+                          <ul class="level3">
+                            <li><a href="#">Товар</a></li>
+                            <li><a href="#">Товар</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Категория 2 уровень</a><span class="arrow"></span>
+                          <ul class="level3">
+                            <li><a href="#">Товар</a></li>
+                            <li><a href="#">Товар</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-8 col-xl-9">
+                <div class="row news_list">
+                  <div class="col-12">
+                    <article class="type_news">
+                      <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-4"><a href="#">
+                            <div class="img_thumbnail" style="background-image:url(img/p_4.jpg)"></div></a></div>
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-8">
+                          <div class="news_title">Lorem Ipsum is simply dummy text</div>
+                          <div class="news_desc">Fusce sed dapibus sem. Donec suscipit metus eget orci ultricies, volutpat sagittis libero suscipit. Vestibulum vehicula urna id maximus maximus. Aliquam accumsan euismod dolor non faucibus. Curabitur pulvinar tincidunt ex sit amet vehicula. Pellentesque finibus dignissim ipsum, ac pretium orci pharetra quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla lobortis mattis ligula quis ultricies.</div><a class="btn_default" href="#">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
                   </div>
-                  <div class="row cart_body">
-                    <div class="col-12 col-sm-12 col-md-6 col-xl-12">
-                      <div class="cart_product_item">
-                        <div class="c_product_img"><a href="#"><img src="img/cat_1.png"/></a></div>
-                        <div class="c_product_name">
-                          <div class="c_title">Название товара</div>
-                          <div class="c_cont"><span class="c_name"><a href="#">Ботинки рабочие с усиленной подошвой</a></span><span class="br">Артикул: 3002</span></div>
+                  <div class="col-12">
+                    <article class="type_news">
+                      <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-4"><a href="#">
+                            <div class="img_thumbnail" style="background-image:url(img/p_4.jpg)"></div></a></div>
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-8">
+                          <div class="news_title">Lorem Ipsum is simply dummy text</div>
+                          <div class="news_desc">Fusce sed dapibus sem. Donec suscipit metus eget orci ultricies, volutpat sagittis libero suscipit. Vestibulum vehicula urna id maximus maximus. Aliquam accumsan euismod dolor non faucibus. Curabitur pulvinar tincidunt ex sit amet vehicula. Pellentesque finibus dignissim ipsum, ac pretium orci pharetra quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla lobortis mattis ligula quis ultricies.</div><a class="btn_default" href="#">Подробнее</a>
                         </div>
-                        <div class="c_price">
-                          <div class="c_title">Цена</div>
-                          <div class="c_cont"><span class="c_name">10.50 BYN</span><span class="br">Без НДС</span></div>
-                        </div>
-                        <div class="c_size">
-                          <div class="c_title">Размер</div>
-                          <div class="c_cont"><span class="c_name">XL</span><span class="br">60-62</span></div>
-                        </div>
-                        <div class="c_amount">
-                          <div class="c_title">Кол-во</div>
-                          <div class="c_cont">
-                            <div class="amount"><span class="down"></span>
-                              <input type="text" value="1"/><span class="up"></span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="c_cost">
-                          <div class="c_title">Стоимость</div>
-                          <div class="c_cont"><span class="c_name"><span>10.50</span> BYN</span><span class="br">Без НДС</span></div>
-                        </div><span class="c_delete">Удалить</span>
                       </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-xl-12">
-                      <div class="cart_product_item">
-                        <div class="c_product_img"><a href="#"><img src="img/cat_1.png"/></a></div>
-                        <div class="c_product_name">
-                          <div class="c_title">Название товара</div>
-                          <div class="c_cont"><span class="c_name"><a href="#">Ботинки рабочие с усиленной подошвой</a></span><span class="br">Артикул: 3002</span></div>
+                    </article>
+                  </div>
+                  <div class="col-12">
+                    <article class="type_news">
+                      <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-4"><a href="#">
+                            <div class="img_thumbnail" style="background-image:url(img/p_4.jpg)"></div></a></div>
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-8">
+                          <div class="news_title">Lorem Ipsum is simply dummy text</div>
+                          <div class="news_desc">Fusce sed dapibus sem. Donec suscipit metus eget orci ultricies, volutpat sagittis libero suscipit. Vestibulum vehicula urna id maximus maximus. Aliquam accumsan euismod dolor non faucibus. Curabitur pulvinar tincidunt ex sit amet vehicula. Pellentesque finibus dignissim ipsum, ac pretium orci pharetra quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla lobortis mattis ligula quis ultricies.</div><a class="btn_default" href="#">Подробнее</a>
                         </div>
-                        <div class="c_price">
-                          <div class="c_title">Цена</div>
-                          <div class="c_cont"><span class="c_name">10.50 BYN</span><span class="br">Без НДС</span></div>
-                        </div>
-                        <div class="c_size">
-                          <div class="c_title">Размер</div>
-                          <div class="c_cont"><span class="c_name">XL</span><span class="br">60-62</span></div>
-                        </div>
-                        <div class="c_amount">
-                          <div class="c_title">Кол-во</div>
-                          <div class="c_cont">
-                            <div class="amount"><span class="down"></span>
-                              <input type="text" value="1"/><span class="up"></span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="c_cost">
-                          <div class="c_title">Стоимость</div>
-                          <div class="c_cont"><span class="c_name"><span>10.50</span> BYN</span><span class="br">Без НДС</span></div>
-                        </div><span class="c_delete">Удалить</span>
                       </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-xl-12">
-                      <div class="cart_product_item">
-                        <div class="c_product_img"><a href="#"><img src="img/cat_1.png"/></a></div>
-                        <div class="c_product_name">
-                          <div class="c_title">Название товара</div>
-                          <div class="c_cont"><span class="c_name"><a href="#">Ботинки рабочие с усиленной подошвой</a></span><span class="br">Артикул: 3002</span></div>
+                    </article>
+                  </div>
+                  <div class="col-12">
+                    <article class="type_news">
+                      <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-4"><a href="#">
+                            <div class="img_thumbnail" style="background-image:url(img/p_4.jpg)"></div></a></div>
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-8">
+                          <div class="news_title">Lorem Ipsum is simply dummy text</div>
+                          <div class="news_desc">Fusce sed dapibus sem. Donec suscipit metus eget orci ultricies, volutpat sagittis libero suscipit. Vestibulum vehicula urna id maximus maximus. Aliquam accumsan euismod dolor non faucibus. Curabitur pulvinar tincidunt ex sit amet vehicula. Pellentesque finibus dignissim ipsum, ac pretium orci pharetra quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla lobortis mattis ligula quis ultricies.</div><a class="btn_default" href="#">Подробнее</a>
                         </div>
-                        <div class="c_price">
-                          <div class="c_title">Цена</div>
-                          <div class="c_cont"><span class="c_name">10.50 BYN</span><span class="br">Без НДС</span></div>
-                        </div>
-                        <div class="c_size">
-                          <div class="c_title">Размер</div>
-                          <div class="c_cont"><span class="c_name">XL</span><span class="br">60-62</span></div>
-                        </div>
-                        <div class="c_amount">
-                          <div class="c_title">Кол-во</div>
-                          <div class="c_cont">
-                            <div class="amount"><span class="down"></span>
-                              <input type="text" value="1"/><span class="up"></span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="c_cost">
-                          <div class="c_title">Стоимость</div>
-                          <div class="c_cont"><span class="c_name"><span>10.50</span> BYN</span><span class="br">Без НДС</span></div>
-                        </div><span class="c_delete">Удалить</span>
                       </div>
-                    </div>
+                    </article>
+                  </div>
+                  <div class="col-12">
+                    <article class="type_news">
+                      <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-4"><a href="#">
+                            <div class="img_thumbnail" style="background-image:url(img/p_4.jpg)"></div></a></div>
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-8">
+                          <div class="news_title">Lorem Ipsum is simply dummy text</div>
+                          <div class="news_desc">Fusce sed dapibus sem. Donec suscipit metus eget orci ultricies, volutpat sagittis libero suscipit. Vestibulum vehicula urna id maximus maximus. Aliquam accumsan euismod dolor non faucibus. Curabitur pulvinar tincidunt ex sit amet vehicula. Pellentesque finibus dignissim ipsum, ac pretium orci pharetra quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla lobortis mattis ligula quis ultricies.</div><a class="btn_default" href="#">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-12">
+                    <article class="type_news">
+                      <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-4"><a href="#">
+                            <div class="img_thumbnail" style="background-image:url(img/p_4.jpg)"></div></a></div>
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-8">
+                          <div class="news_title">Lorem Ipsum is simply dummy text</div>
+                          <div class="news_desc">Fusce sed dapibus sem. Donec suscipit metus eget orci ultricies, volutpat sagittis libero suscipit. Vestibulum vehicula urna id maximus maximus. Aliquam accumsan euismod dolor non faucibus. Curabitur pulvinar tincidunt ex sit amet vehicula. Pellentesque finibus dignissim ipsum, ac pretium orci pharetra quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla lobortis mattis ligula quis ultricies.</div><a class="btn_default" href="#">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-12">
+                    <article class="type_news">
+                      <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-4"><a href="#">
+                            <div class="img_thumbnail" style="background-image:url(img/p_4.jpg)"></div></a></div>
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-8">
+                          <div class="news_title">Lorem Ipsum is simply dummy text</div>
+                          <div class="news_desc">Fusce sed dapibus sem. Donec suscipit metus eget orci ultricies, volutpat sagittis libero suscipit. Vestibulum vehicula urna id maximus maximus. Aliquam accumsan euismod dolor non faucibus. Curabitur pulvinar tincidunt ex sit amet vehicula. Pellentesque finibus dignissim ipsum, ac pretium orci pharetra quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla lobortis mattis ligula quis ultricies.</div><a class="btn_default" href="#">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-12">
+                    <article class="type_news">
+                      <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-4"><a href="#">
+                            <div class="img_thumbnail" style="background-image:url(img/p_4.jpg)"></div></a></div>
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-8">
+                          <div class="news_title">Lorem Ipsum is simply dummy text</div>
+                          <div class="news_desc">Fusce sed dapibus sem. Donec suscipit metus eget orci ultricies, volutpat sagittis libero suscipit. Vestibulum vehicula urna id maximus maximus. Aliquam accumsan euismod dolor non faucibus. Curabitur pulvinar tincidunt ex sit amet vehicula. Pellentesque finibus dignissim ipsum, ac pretium orci pharetra quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla lobortis mattis ligula quis ultricies.</div><a class="btn_default" href="#">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
                   </div>
                 </div>
-                <div class="total_container">
-                  <div class="total">
-                    <div class="d-flex">
-                      <p class="t_title">Итого:</p>
-                      <div class="t_price_block">
-                        <div class="price"><span>21.00 BYN</span><span class="br">Без НДС</span></div>
-                        <div class="price"><span>22.50 BYN</span><span class="br">С НДС</span></div>
-                      </div>
-                    </div>
-                    <button class="btn_default">Перейти к оформлениею заказа</button>
-                  </div>
-                </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
