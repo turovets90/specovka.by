@@ -772,6 +772,9 @@ h3, .h3 {
   @media (max-width:991px){
     font: 16px @Ubuntu-bold;
   }
+  @media (max-width:375px){
+    max-width: 100%;
+  }
 }
 
 header{
@@ -3279,14 +3282,14 @@ h2{
 
 .choose_size{
   margin-bottom: 15px;
-  select{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+  button{
     border:0;
     border-bottom: 2px dotted #476CA6;
     color: #3D5D8F;
     font-size: 14px;
+    padding: 0;
+    background: none;
+    cursor: pointer;
     @media (max-width:1200px){
       font-size: 16px;
       margin-top: 15px;
@@ -4493,6 +4496,7 @@ li{
     }
     .total{
       max-width: 330px;
+      width: 100%;
       display: inline-block;
       @media (max-width:375px){
         max-width: 100%;
@@ -4766,7 +4770,7 @@ li{
 
 
 
-#cart_modal{
+#cart_modal, #size_modal{
   .modal-dialog{
     @media (min-width:768px){
       max-width: 750px;
@@ -5243,5 +5247,93 @@ srtong, b{
   height: 60px;
   @media (max-width: 660px){
     display: none;
+  }
+}
+
+
+
+@media (max-width:575px){
+  .map_contacts{
+    .btn_default{
+      max-width: 100%;
+    }
+  }
+}
+
+
+
+.size_item_block{
+  margin-bottom: 30px;
+  .s_title{
+    font: 18px @Ubuntu-bold;
+  }
+  .d_flex{
+    .flex(); .wrap();
+
+
+
+    .checkbox{
+      position: relative;
+      input[type="checkbox"]{
+        position: absolute;
+        opacity: 0;
+        &:checked{
+          +label{
+            background: @bg_default;
+            color: #fff;
+          }
+        }
+        + label{
+          margin-bottom: 0;
+          position: relative;
+          .border-radius(5px);
+          padding: 2px 3px;
+          cursor: pointer;
+        }
+      }
+    }
+
+
+    .item{
+      //border: 1px solid;
+      min-width: 50px;
+      margin-top: 10px;
+      border-style: solid;
+      border-color: #E3E7E9;
+      border-width: 1px 1px 1px 0;
+
+
+      > div{
+        padding: 2px 4px;
+        min-height: 40px;
+        .flex();
+        .ai-center();
+        .j-center();
+      }
+
+      .designation{
+        border-bottom:1px solid #E3E7E9;
+      }
+      &.first{
+        min-width: 120px;
+        border-width: 1px 1px 1px 1px;
+        > span{
+          font: 16px @Ubuntu-bold;
+          &:first-child{
+
+          }
+        }
+        span{
+          .flex();
+          .ai-center();
+          width: 100%;
+          min-height: 40px;padding: 2px 4px;
+          &:first-child{
+            border-bottom:1px solid #E3E7E9;
+          }
+        }
+      }
+    }
+
   }
 }
