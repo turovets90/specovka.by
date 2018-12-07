@@ -3857,7 +3857,7 @@ h2{
   }
 
 
-  .level2{
+  .level2, .level3{
     display: none;
     width: 100%;
 
@@ -3934,7 +3934,30 @@ h2{
     }
   }
 
+
   .level3{
+    > li{
+      &.active{
+        > a{
+          color: @bg_default;
+        }
+        > .arrow{
+          &:before{
+            .transform(rotate(180deg));
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='6' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M9 1L5 5 1 1' stroke='%233D5D8F'/%3e%3c/svg%3e");
+          }
+        }
+
+        .level4{
+          display: block;
+        }
+
+      }
+    }
+
+  }
+
+  .level4{
     display: none;
     width: 100%;
 
@@ -5335,5 +5358,39 @@ srtong, b{
       }
     }
 
+  }
+}
+
+
+
+.card-header{
+  .card_title{
+    cursor: pointer;
+    position: relative;
+    padding-right: 30px;
+    &:before{
+    .b_a();
+      width: 10px;
+      height: 6px;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='6' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M9 1L5 5 1 1' stroke='%23373737' stroke-width='1.4'/%3e%3c/svg%3e");
+  }
+    &[aria-expanded="true"]{
+      &:before{
+        .transform(rotate(180deg));
+      }
+    }
+  }
+}
+
+
+
+.sidebar_banner{
+  margin-top: 50px;
+  @media (max-width:1200px){
+    margin-top: 30px;
   }
 }
