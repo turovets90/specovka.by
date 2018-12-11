@@ -263,6 +263,11 @@ $(document).ready(function(){
         var cat_submenu=$(this).find('.cat_submenu');
         $(showBtn).on('click', function(){
             $(cat_submenu).toggleClass('show');
+            if($(cat_submenu).hasClass('show')){
+                $(showBtn).text('Свернуть');
+            }else{
+                $(showBtn).text('Развернуть');
+            }
         });
     });
 
