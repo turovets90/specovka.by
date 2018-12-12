@@ -5405,3 +5405,80 @@ srtong, b{
 .phones a.tel:before,.phones a.velcom:before, .phones a.mts:before, nav.main_nav .main_nav_btns_list .search_btn:before,.location:before,.mail:before,.time_work:before{
 background-size: cover;
 }
+
+
+
+
+.pagination_block{
+  background: #EBEBEB;
+  padding: 20px;
+  margin-bottom: 10px;
+  .pagination{
+    margin-bottom: 0;
+    li{
+      padding-left: 0;
+      &:before{
+        display: none;
+      }
+      &.empty{
+        width: 25px;
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        -webkit-justify-content: center;
+        align-items: flex-end;
+        -webkit-align-items: flex-end;
+        padding-bottom: 9px;
+        padding-right: 3px;
+      }
+    }
+    a{
+      text-decoration: none; color: #3D5D8F;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      display: -webkit-flex;
+      align-items: center;
+      -webkit-align-items: center;
+      justify-content: center;
+      -webkit-justify-content: center;
+      border-radius: 0 !important;
+      border:0;
+      margin-right: 5px;
+      &.active{
+        color: #333;
+      }
+      @media (max-width:575px){
+        width: 35px;
+        height: 35px;
+      }
+
+      &:focus,&:hover{
+        box-shadow: none;
+        outline: none;
+        background: #3D5D8F;
+        color: #fff;
+        span{
+          color: #fff;
+        }
+      }
+      span{
+        color: #3D5D8F;
+      }
+      &[aria-label="Previous"], &[aria-label="Next"]{
+        color: #3D5D8F;
+      }
+    }
+  }
+  .displaying_pages{
+    text-align: right;
+    @media (max-width:1200px){
+      text-align: left;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+    @media (max-width:575px){
+      font-size: 14px;
+    }
+  }
+}
