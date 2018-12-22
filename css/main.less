@@ -5291,6 +5291,9 @@ srtong, b{
 
     .checkbox{
       position: relative;
+      @media (max-width:767px){
+        border-left: 1px solid #E3E7E9;
+      }
       input[type="checkbox"]{
         position: absolute;
         opacity: 0;
@@ -5318,6 +5321,11 @@ srtong, b{
       border-style: solid;
       border-color: #E3E7E9;
       border-width: 1px 1px 1px 0;
+      @media (max-width:767px){
+        margin-top: 0; width: 100%;
+        .flex();
+        border-width: 0 1px 1px 0;
+      }
 
 
       > div{
@@ -5326,18 +5334,38 @@ srtong, b{
         .flex();
         .ai-center();
         .j-center();
+        @media (max-width:767px){
+          width: 50%; min-width: 50%;
+          text-align: center;
+        }
       }
 
       .designation{
         border-bottom:1px solid #E3E7E9;
+        @media (max-width:767px){
+          border-bottom: 0 !important;
+          border-left: 1px solid #E3E7E9;
+        }
       }
       &.first{
         min-width: 120px;
         border-width: 1px 1px 1px 1px;
+        @media (max-width:767px){
+          width: 100%;
+          .flex(); margin-top: 10px;
+        }
         > span{
           font: 16px @Ubuntu-bold;
+          @media (max-width:767px){
+          width: 50%;
+          min-width: 50%;
+            text-align: center;  border-bottom: 0 !important;
+            font: 14px @Ubuntu-bold;
+          }
           &:first-child{
-
+            @media (max-width:767px){
+              border-right: 1px solid #E3E7E9;
+            }
           }
         }
         span{
@@ -5345,6 +5373,10 @@ srtong, b{
           .ai-center();
           width: 100%;
           min-height: 40px;padding: 2px 4px;
+          @media (max-width:767px){
+            .j-center();
+          }
+
           &:first-child{
             border-bottom:1px solid #E3E7E9;
           }
